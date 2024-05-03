@@ -1,10 +1,10 @@
 {
   "name": "@seifeldinio/octa-ui",
-  "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
-    "dist"
+    "dist/**/*.js",
+    "dist/**/*.css"
   ],
   "main": "dist/octa-ui-umd.cjs",
   "module": "dist/octa-ui.js",
