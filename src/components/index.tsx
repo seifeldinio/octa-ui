@@ -1,3 +1,5 @@
+import "tailwindcss/tailwind.css";
+
 /* eslint-disable react-refresh/only-export-components */
 export * from "./Avatar";
 export * from "./Badge";
