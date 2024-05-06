@@ -1,13 +1,14 @@
 <!-- markdownlint-disable-next-line -->
 <p align="center">
-  <a href="https://mui.com/material-ui/" rel="noopener" target="_blank"><img height="133" src="https://media.publit.io/file/octa-ui-logo.webp" alt="Material UI logo"></a>
+  <a href="https://octaui.com/" rel="noopener" target="_blank"><img height="133" src="https://media.publit.io/file/octaui-logo.webp" alt="Octa UI Logo"></a>
 </p>
+
+<h1 align="center">Octa UI</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License">
-
 </p>
 
 <!-- <h1 align="center">Octa UI</h1> -->
