@@ -1,7 +1,7 @@
 {
   "name": "octa-ui",
-  "description": "Your toolkit for crafting stunning and seamless user interfaces.",
-  "version": "0.0.26",
+  "description": "Fast and modern React UI library.",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
