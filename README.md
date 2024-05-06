@@ -13,7 +13,7 @@
 
 <!-- <h1 align="center">Octa UI</h1> -->
 
-Octa UI is an open-source, sleek, lightning-fast React UI library, meticulously designed for modern web development using TypeScript and Tailwind CSS.
+Octa UI 🐙 is an open-source, sleek, lightning-fast React UI library, meticulously designed for modern web development using TypeScript and Tailwind CSS.
 
 ## Features ✨
 
@@ -40,7 +40,7 @@ import "octa-ui/dist/style.css";
 
 Visit [https://octaui.com/](https://octaui.com/) to view the full documentation.
 
-## Example ✨
+## Example 🦑
 
 Here's an example showcasing the usage of Octa UI components:
 
@@ -88,6 +88,18 @@ export default SignIn;
 ```
 
 This example demonstrates a sign-in form using OctaUI's `Button` and `Input` components. Make sure to include the necessary imports and OctaUI styles in your project for the components to work correctly.
+
+
+## Contributing Guidelines 🤝
+
+We welcome contributions from the community to improve Octa UI! If you'd like to contribute, please follow these guidelines:
+
+1. **Fork the repository:** Create your own fork of the repository and make changes in your fork.
+2. **Create a new branch:** Create a new branch for your changes, e.g., `feature/my-feature`.
+3. **Make changes:** Make your desired changes to the codebase.
+4. **Test your changes:** Test your changes thoroughly to ensure they work as expected.
+5. **Submit a pull request:** Once your changes are ready, submit a pull request to the main repository for review.
+
 
 ## License ⚖️
 
