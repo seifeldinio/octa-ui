@@ -36,14 +36,18 @@ const buttonStyles = cva(
   }
 );
 
-type ButtonProps = ComponentProps<"button"> & VariantProps<typeof buttonStyles>;
+type ButtonProps = ComponentProps<"button"> &
+  VariantProps<typeof buttonStyles> & {
+    onClick?: () => void;
+  };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, ...props }, ref) => {
+  ({ className, variant, size, onClick, ...props }, ref) => {
     return (
       <button
         ref={ref}
         className={cn(buttonStyles({ variant, size, className }))}
+        onClick={onClick}
         {...props}
       />
     );

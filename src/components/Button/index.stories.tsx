@@ -18,6 +18,7 @@ export const Default: Story = {
   args: {
     children: "Default",
     size: "default",
+    onClick: () => console.log("Default button clicked"),
   },
 };
 
@@ -26,6 +27,7 @@ export const Secondary: Story = {
     children: "Secondary",
     variant: "secondary",
     size: "default",
+    onClick: () => console.log("Secondary button clicked"),
   },
 };
 
@@ -34,6 +36,7 @@ export const Material: Story = {
     children: "Material",
     variant: "material",
     size: "default",
+    onClick: () => console.log("Material button clicked"),
   },
 };
 
@@ -42,6 +45,7 @@ export const MaterialSecondary: Story = {
     children: "Material Secondary",
     variant: "materialSecondary",
     size: "default",
+    onClick: () => console.log("MaterialSecondary button clicked"),
   },
 };
 
@@ -50,6 +54,7 @@ export const Ghost: Story = {
     children: "Ghost",
     variant: "ghost",
     size: "default",
+    onClick: () => console.log("Ghost button clicked"),
   },
 };
 
@@ -58,6 +63,7 @@ export const Key: Story = {
     children: "Key",
     variant: "key",
     size: "default",
+    onClick: () => console.log("Key button clicked"),
   },
 };
 
@@ -66,6 +72,7 @@ export const Glass: Story = {
     children: "Glass",
     variant: "glass",
     size: "default",
+    onClick: () => console.log("Glass button clicked"),
   },
 };
 
@@ -74,6 +81,7 @@ export const Gradient: Story = {
     children: "Gradient",
     variant: "gradient",
     size: "default",
+    onClick: () => console.log("Gradient button clicked"),
   },
 };
 
@@ -82,6 +90,7 @@ export const Outline: Story = {
     children: "Outline",
     variant: "outline",
     size: "default",
+    onClick: () => console.log("Outline button clicked"),
   },
 };
 
@@ -90,5 +99,6 @@ export const Destructive: Story = {
     children: "Destructive",
     variant: "destructive",
     size: "sm",
+    onClick: () => console.log("Destructive button clicked"),
   },
 };
