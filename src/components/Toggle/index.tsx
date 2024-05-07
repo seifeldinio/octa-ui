@@ -1,14 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface ToggleProps {
   label: string;
+  checked?: boolean; // Optional prop for controlling checked state
+  onChange?: (checked: boolean) => void; // Optional callback for onChange event
 }
 
-export const Toggle: React.FC<ToggleProps> = ({ label }) => {
-  const [isChecked, setIsChecked] = useState(false);
+export const Toggle: React.FC<ToggleProps> = ({
+  label,
+  checked: propChecked = false,
+  onChange,
+}) => {
+  const [isChecked, setIsChecked] = useState(propChecked);
+
+  useEffect(() => {
+    setIsChecked(propChecked);
+  }, [propChecked]);
 
   const toggleCheckbox = () => {
-    setIsChecked(!isChecked);
+    const newChecked = !isChecked;
+    setIsChecked(newChecked);
+    if (onChange) {
+      onChange(newChecked); // Invoke onChange callback with new checked state
+    }
   };
 
   return (

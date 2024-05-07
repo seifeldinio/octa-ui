@@ -1,14 +1,15 @@
-import * as React from "react";
+import React from "react";
 import { cn } from "@/utils";
 import "./input.css";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>; // Add onChange prop
 }
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, label, ...props }, ref) => {
+  ({ className, type, label, onChange, ...props }, ref) => {
     return (
       <div className="relative float-label-input">
         <input
@@ -20,6 +21,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             "block w-full bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-2 px-3 block appearance-none leading-normal focus:border-accent",
             className
           )}
+          onChange={onChange} // Pass onChange prop to the input element
         />
 
         <label className="absolute top-2 left-1 text-[#4a4a4a] pointer-events-none transition duration-200 ease-in-outbg-white px-2 text-sm ">

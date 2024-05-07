@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Input } from ".";
+import { Meta, StoryFn as Story } from "@storybook/react";
+import { Input, InputProps } from ".";
 
-const meta: Meta<typeof Input> = {
+const meta: Meta<InputProps> = {
   title: "OctaUI/Input",
   component: Input,
   parameters: {
@@ -12,25 +12,25 @@ const meta: Meta<typeof Input> = {
 
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+const Template: Story<InputProps> = (args) => <Input {...args} />;
 
-export const Default: Story = {
-  args: {
-    type: "text",
-    label: "Label",
-  },
+export const Default = Template.bind({});
+Default.args = {
+  type: "text",
+  label: "Label",
+  onChange: (event) => console.log("Value changed:", event.target.value),
 };
 
-export const Password: Story = {
-  args: {
-    type: "password",
-    label: "Password",
-  },
+export const Password = Template.bind({});
+Password.args = {
+  type: "password",
+  label: "Password",
+  onChange: (event) => console.log("Value changed:", event.target.value),
 };
 
-export const Number: Story = {
-  args: {
-    type: "number",
-    label: "Enter a number",
-  },
+export const Number = Template.bind({});
+Number.args = {
+  type: "number",
+  label: "Enter a number",
+  onChange: (event) => console.log("Value changed:", event.target.value),
 };
